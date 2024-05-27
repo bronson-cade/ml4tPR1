@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'jdf-starter.blg'
+[34] biber:340> INFO - === Sun May 26, 2024, 18:52:21
+[42] Biber.pm:419> INFO - Reading '/home/bronson/PycharmProjects/ml4tPR1/report/jdf-starter.bcf'
+[75] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[84] Biber.pm:4419> INFO - Processing section 0
+[89] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[89] bibtex.pm:1713> INFO - LaTeX decoding ...
+[92] bibtex.pm:1519> INFO - Found BibTeX data source '/home/bronson/PycharmProjects/ml4tPR1/report/references.bib'
+[124] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[125] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[125] Biber.pm:4239> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[125] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[127] bbl.pm:660> INFO - Writing 'jdf-starter.bbl' with encoding 'UTF-8'
+[128] bbl.pm:763> INFO - Output to jdf-starter.bbl

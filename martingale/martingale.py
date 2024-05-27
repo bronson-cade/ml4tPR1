@@ -28,6 +28,7 @@ GT ID: 903951342 (replace with your GT ID)
   		  	   		 	   			  		 			 	 	 		 		 	
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
 np.set_printoptions(threshold=np.inf)
 
   		  	   		 	   			  		 			 	 	 		 		 	
@@ -64,12 +65,12 @@ def get_spin_result(win_prob):
 
 
 def run_episode_balch(win_prob):
-    results = []
+    results = [0]
     episode_winnings = 0
     episode_counter = 0
 
     """Code from Project Description"""
-    while (episode_winnings < 80) and (episode_counter < 999):
+    while (episode_winnings < 80) and (episode_counter < 1000):
         won = False
         bet_amount = 1
         while not won:
@@ -82,13 +83,13 @@ def run_episode_balch(win_prob):
             results.append(episode_winnings)
             episode_counter += 1
     """In case we won early"""
-    if episode_counter < 999:
+    if episode_counter < 1000:
         results.extend([80]*(1000-episode_counter))
     return results
 
 
 def run_episode_bankroll_limit(win_prob):
-    results = []
+    results = [0]
     episode_winnings = 0
     episode_counter = 0
     while (episode_winnings < 80) and (episode_counter < 1000):
@@ -116,63 +117,114 @@ def run_episode_bankroll_limit(win_prob):
     return results
 
 def experiment1_figs(win_prob):
-    spins = np.arange(1, 1001)
+    spins = np.arange(0, 1001)
     episodes = []
     for i in range(10):
         episode = run_episode_balch(win_prob)
         episodes.append(episode)
-
-    for i in range(10):
-        plt.plot(spins, episodes[i], label=i)
-
     """Experiment 1.1"""
+    fig, ax = plt.subplots()
+    for i in range(10):
+        ax.plot(spins, episodes[i], label="Episode {i}".format(i=i))
 
+    fmt = '${x:,.0f}'
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick)
+    plt.xticks(rotation=25)
+    plt.xlabel("Spins")
+    plt.ylabel("Winnings")
+    plt.title("Martingale Strategy Simulations")
     plt.xlim(0, 300)
     plt.ylim(-256, 100)
     plt.legend()
-    plt.show()
+    plt.savefig("martingale_no_limits_simulation.png", format="png")
 
     """Experiment 1.2"""
+    fig, ax = plt.subplots()
     episodes = np.array(episodes)
     episode_mean = np.mean(episodes, axis=0)
     episode_std = np.std(episodes, axis=0)
     plt.plot(spins, episode_mean, label="Spin Mean")
     plt.plot(spins, episode_mean + episode_std, label="Spin Mean + Std. Dev.")
     plt.plot(spins, episode_mean - episode_std, label="Spin Mean - Std. Dev.")
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick)
+    plt.xticks(rotation=25)
     plt.xlim(0, 300)
     plt.ylim(-256, 100)
+    plt.xlabel("Spins")
+    plt.ylabel("Winnings")
+    plt.title("Martingale Strategy without Limit (Mean)")
     plt.legend()
+    plt.savefig("martingale_no_limits_mean.png", format="png")
 
     """Experiment 1.3"""
     episode_median = np.median(episodes, axis=0)
-    plt.show()
-    plt.plot(spins, episode_median, label="Spin Median")
-    plt.plot(spins, episode_median + episode_std, label="Spin Median + Std. Dev.")
-    plt.plot(spins, episode_median - episode_std, label="Spin Median - Std. Dev.")
+    fig, ax = plt.subplots()
+    ax.plot(spins, episode_median, label="Spin Median")
+    ax.plot(spins, episode_median + episode_std, label="Spin Median + Std. Dev.")
+    ax.plot(spins, episode_median - episode_std, label="Spin Median - Std. Dev.")
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick)
+    plt.xticks(rotation=25)
     plt.xlim(0, 300)
     plt.ylim(-256, 100)
+    plt.xlabel("Spins")
+    plt.ylabel("Winnings")
+    plt.title("Martingale Strategy without Limit (Median)")
     plt.legend()
-    plt.show()
+    plt.savefig("martingale_no_limits_median.png", format="png")
 
 
 def experiment2_figs(win_prob):
-    spins = np.arange(1, 1001)
+    spins = np.arange(0, 1001)
     episodes = []
     for i in range(10):
         episode = run_episode_bankroll_limit(win_prob)
-        print(len(episode))
         episodes.append(episode)
 
-    for i in range(10):
-        plt.plot(spins, episodes[i], label=i)
+    wins = 0
+    for episode in episodes:
+        if episode[1000] == 80:
+            wins += 1
+    print(wins)
 
-    """Experiment 1.1"""
-
+    """Experiment 2.1"""
+    fig, ax = plt.subplots()
+    episode_mean = np.mean(episodes, axis=0)
+    episode_std = np.std(episodes, axis=0)
+    plt.plot(spins, episode_mean, label="Mean Winnings")
+    plt.plot(spins, episode_mean + episode_std, label="Mean + Standard Deviation")
+    plt.plot(spins, episode_mean - episode_std, label="Mean - Standard Deviation")
+    fmt = '${x:,.0f}'
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick)
+    plt.xticks(rotation=25)
     plt.xlim(0, 300)
     plt.ylim(-256, 100)
+    plt.xlabel("Spins")
+    plt.ylabel("Winnings")
+    plt.title("Martingale Strategy with Bankroll Limit (Mean)")
     plt.legend()
-    plt.show()
+    plt.savefig("martingale_with_limits_mean.png", format="png")
 
+    "Experiment 2.1"
+    fig, ax = plt.subplots()
+    episode_median = np.median(episodes, axis=0)
+    plt.plot(spins, episode_median, label="Median Winnings")
+    plt.plot(spins, episode_median + episode_std, label="Median + Standard Deviation")
+    plt.plot(spins, episode_median - episode_std, label="Median - Standard Deviation")
+    fmt = '${x:,.0f}'
+    tick = mtick.StrMethodFormatter(fmt)
+    ax.yaxis.set_major_formatter(tick)
+    plt.xticks(rotation=25)
+    plt.xlim(0, 300)
+    plt.ylim(-256, 100)
+    plt.xlabel("Spins")
+    plt.ylabel("Winnings")
+    plt.title("Martingale Strategy with Bankroll Limit (Median)")
+    plt.legend()
+    plt.savefig("martingale_with_limits_median.png", format="png")
 
 def test_code():  		  	   		 	   			  		 			 	 	 		 		 	
     """  		  	   		 	   			  		 			 	 	 		 		 	

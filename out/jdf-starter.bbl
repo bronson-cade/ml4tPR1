@@ -1,0 +1,234 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{joyner2016}{inproceedings}{}
+      \name{author}{12}{}{%
+        {{hash=d2495fc112dafd772d6cfcb025f0600d}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=97985dc884aae5850aaf225e05c2a4d1}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1d41124a7e1a9773a89e689aa476bda4}{%
+           family={Irish},
+           familyi={I\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3edfa9279e391e6014a17bf664f1dd85}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2b7a9f856b673cd840b881e781070b83}{%
+           family={Langston},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=003221ceaf361fddf28a54b4db64b5ef}{%
+           family={Lupiani},
+           familyi={L\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0704c06ad8da437ea8afa404c97091c1}{%
+           family={Lustig},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=534fdcbce52fe04fe4b30106804b40b4}{%
+           family={Pettoruto},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=53094a30b64f4a3cb42aacef399cb0cc}{%
+           family={Sheahen},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=52552c8742bc15c83d8a019a4437d050}{%
+           family={Smiley},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d3bbb79e0d40d83cce9ffff3363bec24}{%
+           family={Bruckman},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9137aa2d2e832801656385f139058bba}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Edinburgh, Scotland}%
+      }
+      \strng{namehash}{1ac47abbfc72b1fdfad71be72411f165}
+      \strng{fullhash}{56cb1f8ba3f4e0fc5b0a7f2345725b1b}
+      \strng{bibnamehash}{56cb1f8ba3f4e0fc5b0a7f2345725b1b}
+      \strng{authorbibnamehash}{56cb1f8ba3f4e0fc5b0a7f2345725b1b}
+      \strng{authornamehash}{1ac47abbfc72b1fdfad71be72411f165}
+      \strng{authorfullhash}{56cb1f8ba3f4e0fc5b0a7f2345725b1b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Third Annual ACM Conference on Learning at Scale}
+      \field{title}{Graders as Meta-Reviewers: Simultaneously Scaling and Improving Expert Evaluation for Large Online Classrooms}
+      \field{year}{2016}
+    \endentry
+    \entry{joyner2017}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=d2495fc112dafd772d6cfcb025f0600d}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Massachusetts}%
+      }
+      \strng{namehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{fullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{bibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorbibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authornamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorfullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Fourth Annual ACM Conference on Learning at Scale}
+      \field{title}{Scaling Expert Feedback: Two Case Studies}
+      \field{year}{2017}
+    \endentry
+    \entry{joyner2018a}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=d2495fc112dafd772d6cfcb025f0600d}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{fullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{bibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorbibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authornamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorfullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 19th International Conference on Artificial Intelligence in Education}
+      \field{title}{Intelligent Evaluation and Feedback in Support of a Credit-Bearing MOOC}
+      \field{year}{2018}
+    \endentry
+    \entry{joyner2018b}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=d2495fc112dafd772d6cfcb025f0600d}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{fullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{bibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorbibnamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authornamehash}{d2495fc112dafd772d6cfcb025f0600d}
+      \strng{authorfullhash}{d2495fc112dafd772d6cfcb025f0600d}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Fifth Annual ACM Conference on Learning at Scale}
+      \field{title}{Toward CS1 at Scale: Building and Testing a MOOC-for-Credit Candidate}
+      \field{year}{2018}
+    \endentry
+    \entry{newman2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=8b3fb441448c3332ff99e1ea646012e3}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d2495fc112dafd772d6cfcb025f0600d}{%
+           family={Joyner},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{918c13a20126d9a515c43e488e11eb85}
+      \strng{fullhash}{918c13a20126d9a515c43e488e11eb85}
+      \strng{bibnamehash}{918c13a20126d9a515c43e488e11eb85}
+      \strng{authorbibnamehash}{918c13a20126d9a515c43e488e11eb85}
+      \strng{authornamehash}{918c13a20126d9a515c43e488e11eb85}
+      \strng{authorfullhash}{918c13a20126d9a515c43e488e11eb85}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 19th International Conference on Artificial Intelligence in Education}
+      \field{title}{Sentiment Analysis of Student Evaluations of Teaching}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
